@@ -8,6 +8,8 @@ function App() {
     <h1>Shivang shrivastava</h1>
     <h2>I am learning react</h2>
     <h3> how are you</h3>
+    <h4> I am fine</h4>
+    <h5>I am comfortable in pushing code</h5>
     </>
   );
 }
