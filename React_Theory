@@ -1,0 +1,245 @@
+before react
+
+wiki.com/sachin ---> sachin.html
+wiki.com/obama ----> obama.html
+.
+.
+.
+wiki.com/n ----> n.html
+
+more HTML file so there is more duplicacy.
+HTml is difficult to dubug.
+
+Not dynamic means we cant use library
+
+After react
+
+wiki.com/sachin ----> index.html
+
+wiki.com/obama ----> index.html
+.
+.
+.
+wiki.com/n -----> index.html
+
+there is only one HTML file in react.
+THATS WHY REACT IS KNOWN AS SINGLE PAGE APPLICATION.
+
+Lesser amount of html file so there is less hardcoding / code duplicacy
+
+
+Why we want to use react?
+
+Beacause of speed and response time.
+ react--->speed---> response time
+
+React is loading much faster than angular.
+
+why react of having faster speed?
+
+ans:-- Because of Virtual DOM Concept.
+
+Virual DOM Concept
+
+without react if we want to update the HTML 
+
+like
+
+<div id="test">geek</div>
+
+document.getElementById("test").innerhtml="something"
+
+if we want to render something into google chrome so we want to give some Html to the browser.
+
+html---> browser
+
+so browser calculate the DOM TREE.
+
+          html
+          /  \   
+     body 
+     /    \   
+     div1 div2 div3
+
+so creation of the dom tree is time taken  process thats the problem before the react.
+
+Problem is solved by react
+
+virtual Dom
+it is a 
+
+hashmap
+
+key                     value
+(element id)       <div id="test">geek</div>
+test
+
+Any time you will modify the html so you will give it to the virtual dom.
+
+so React will Update your virtual Dom
+
+Virtal dom is do optimizations if it will be more changes in file then it will give to browser.
+
+After optimization this code is given to browser then it will create the dom tree.
+
+->
+In  react no of times dom tree is created is less.
+
+That why react is faster.
+
+node modules
+
+--> it contains the code of the libray (like tailwind libray) 
+
+public ---Storing the static code like(html,images,json)
+
+src ---> All the code that you will write that is present in src folder
+
+.env file --> configuration (contains
+username and password
+)
+
+.gitignore--> any file that is present in gitignore will not be push into github.
+
+package.lock.json ---> matadata what have install till now
+
+packge.json ----> matadata about your application + dependencies +commands to run your app
+
+
+tsconfig --> promoting good code practices 
+rules which are related to good coding practices.
+
+React flow:-
+
+wiki.com/sachin ---- sachin.tsx --- react component
+
+wiki.com/obama ---- obama.tsx --- react component
+
+app.tsx
+
+  <route url="wiki.com/obama" component=obama.tsx/>
+  <route url="wiki.com/sachin "component=sachin.tsx/>
+
+  start flow of code
+
+      index.tsx -- first give to virtual dom then Virtual Dom push html into root tag of index.html
+
+      --- app.tsx -- return html
+          --- sachin.tsx -- return html
+
+
+--------------------------
+
+/sachin -------> sachin.tsx will have a button ---> donald
+
+donald -------> donald.tsx
+          will have button ---> obama
+
+/obama ------> obama.tsx
+          button on click ---> back
+
+
+
+--------------------------------
+export and export default concept
+
+
+file.tsx
+     ----- 5 react component (5 function)
+
+     only 1 component can be marked export default
+
+     --- remaining 2/4 can be marked export
+
+
+anotherfile.tsx
+
+---- import {file} from "file.tsx" --- in case of export only not default
+
+----------------------------------
+
+
+
+file.tsx
+
+---- 1 react component (1 function)
+---- export default
+
+ anotherfile.tsx
+
+ ---- import file from "file.tsx"
+
+
+------------------------------------  
+
+navigate
+
+const navigate=useNavigate()
+
+navigate("sachin")--> it will redirect you to that sachin url
+
+navigate(-1) ----> it will take back to previous link 
+---> take back you to b to a
+
+
+a react component
+return html
+html should have a single root
+<---- root tag it can be div
+       ---- random html
+       </root> close root tag
+
+<>  ---> fragment this can be a root tag
+
+----- random html
+----- random html
+</>-----> close fragment close root
+
+
+incorrect url
+ --- change url to correct url in browser (default url)
+ --- default url --- home
+ --- home url to home component
+
+
+ wiki.com  ---> home
+    ---> did not give any subpath
+
+    
+------------
+query parameters
+
+/user/:userId----->UserParams
+
+localhost:port/user/pravin
+
+pravin ---> userid
+
+userid from userParams component
+
+
+use js/ts code inside html
+
+--- js/ts code weapped inside flower bracket
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

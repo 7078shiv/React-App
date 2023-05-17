@@ -1,0 +1,23 @@
+deployment
+100 files created swiggy website in your local machine--- local computer
+
+testwebsite
+prodwebsite
+
+2 approach
+
+1 approach manual --- copy the code to test server/ testwebsite
+
+git push 
+firebase deploy
+2 minutes
+
+automatic approach --- prodwebsite deploy
+git will automaticlly run ci cd pipeline - build the code , installation ,test ,deloy the code to firebase server
+5 minutes
+
+
+
+ extensions
+ 
+
