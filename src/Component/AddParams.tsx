@@ -17,6 +17,9 @@ export default function AddParams(){
         case "**":
             result=parseInt(x)**parseInt(y);
             break
+        case "<<":
+            result=parseInt(x)<<parseInt(y);
+            break
         default:
             result=parseInt(x)/parseInt(y);
             break
