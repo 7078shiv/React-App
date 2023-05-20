@@ -9,6 +9,7 @@ import AddParams from "./Component/AddParams";
 import Form from "./Component/Form";
 import NoteTaking from "./Component/NoteTaking";
 import Carousel from "./Component/Carousel";
+import  UseEffect_One  from "./Component/UseEffect_One";
 // react-router-dom enable me to create the routes
 export default function App() {
   return (
@@ -36,6 +37,11 @@ export default function App() {
       <Route path="/form" element={<Form/>}></Route>
       <Route path="/NoteTaking" element={<NoteTaking/>}></Route>
       <Route path="/Carousel" element={<Carousel/>}></Route>
+
+
+      {/* Useeffect */}
+
+      <Route path="/UseEffect_One" element={<UseEffect_One/>}></Route>
     </Routes>
     </BrowserRouter>
   );

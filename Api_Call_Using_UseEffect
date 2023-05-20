@@ -1,0 +1,52 @@
+We need to make an api call how do we do it usually we do it using Useeffect.
+
+
+syntax is:-
+function name(){
+    const [username,setusername]=UseState<>();
+    const[notes,setnotes]=usestate<>();
+    useeffect(fn,[]);
+    render username;
+}
+[] --> Array plays an very imp role in useeffect .
+
+fn --> you will make api call
+
+Api will return something so you have to store it somewhere so we will store it inside usestate.
+
+async function api(){
+    const response=await fetch(url of api);
+    const json=await response.json();
+    setusername(json);
+}
+
+
+---> Coiming to second argument empty array
+
+[]  ----> fn will be calls only ones during the lifetime
+
+[username] ---> every time the username changes fn will be invoked
+
+
+[username,notes] ---> every time the either username or notes will be changes so fn will be invoked.
+
+
+// usecase of this empty argument will be say that you have logged in to facebook so you need to make an api call to get the user profile how you get only one time to fetch user profile during lifetime
+
+so what you will be doing
+
+useeffect[getuserprofile,[]];
+
+// newsfeed ---> called everytime you scroll
+
+useeffect[getnewsfeed,[scrollPositon]];
+
+// as you scroll x or y coordinate changes you would call getnewsfeed.
+
+// in Corousel
+
+useeffect[getImageUrl from backed,[current]];
+every time the current changes the url you get from backend
+
+
+
