@@ -1,0 +1,86 @@
+to understand props --- build stopwatch
+to understand state --- build todoapp
+
+
+props -- code reusablity
+
+
+suppose we have a two buttons cancle and continue both text is
+different, colour different .
+
+to implement two buttons we have two approaches
+
+1) write a two html code for cancle and continue this is not good way.
+
+2) write a single html code and pass colour and text as an 
+argument .
+for cancle button pass grey color and cancle text as an argument
+for continue button pass blue coloue and cotinue text as and argument
+
+
+The way we pass colour and text as an argument is called props.
+
+We are passing colour and text as prop to button react.
+
+
+state
+
+
+similar to class attribute
+
+class Test{
+    count=0;
+    add(){
+        setcount(count);
+    }
+    setcount(count){
+        this.count=count+1;
+    }
+}
+Test t=new Test();
+
+t.add() // 1 count 0 initially it moved to 1
+
+t.add() // 2 count 1 initially it moved to 2
+
+count state which was holding number
+
+state --> holds some value . memory bucket
+
+anything you want to save in a component you will save as a state.
+
+state is consider as a bucket which hold some data
+
+// to create a prop you create a interface
+
+interface i{
+    text:string;
+    classname:string;
+}
+
+interface is used in function argument
+And caller should passed an argument
+
+
+state
+
+usestate hook
+usestate is a generic so you have to define datatype and 
+define initiall value.
+
+usestate will return array
+
+array destructuring -- 1st argument is a variable 'currentcount'
+-- 2nd argument is setter
+
+count[count,setcount]=useState<number>(0);
+
+setcount is a function.
+
+
+
+
+
+
+
+

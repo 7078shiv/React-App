@@ -6,6 +6,9 @@ import Donald from "./Component/Donald";
 import Home from "./Component/Home";
 import UserParams from "./Component/UserParams";
 import AddParams from "./Component/AddParams";
+import Form from "./Component/Form";
+import NoteTaking from "./Component/NoteTaking";
+import Carousel from "./Component/Carousel";
 // react-router-dom enable me to create the routes
 export default function App() {
   return (
@@ -28,6 +31,11 @@ export default function App() {
       {/* wildcard matching should be implemented at last */}
 
       <Route path="*" element={<Home></Home>}></Route>
+
+      {/* Props and state */}
+      <Route path="/form" element={<Form/>}></Route>
+      <Route path="/NoteTaking" element={<NoteTaking/>}></Route>
+      <Route path="/Carousel" element={<Carousel/>}></Route>
     </Routes>
     </BrowserRouter>
   );

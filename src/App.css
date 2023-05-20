@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+.addbutton{
+  width:70px;
+  height:50px;
+  background-color:blue;
+  color:white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.minusbutton{
+  width:70px;
+  height:50px;
+  color:yellow;
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.todo-input {
+  position: relative;
+  width: 400px;
+
+  padding: 30px 30px 15px;
+  background: white;
+  border: 1px solid;
+  border-color: #dfdcdc #d9d6d6 #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  margin-left: 400px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  margin: 10px ;
+  padding: 2px;
+  border-radius: 30%;
+  width: 100px;
+  height: 50px;
+  background-color: coral;
+  margin: 50px;
+}
+.app-title {
+  font-size: 52px;
+  line-height: 52px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -0.8px;
+  color: palevioletred;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listitems{
+  border: 2px solid black;
+  text-align: center;
+  background-color: rebeccapurple;
+  color: black;
+  margin: 20px auto;
+  border-radius: 20%;
+  text-decoration: double;
+   width: 50%;
+  height: 10%; 
 }
+
+/* .content{
+  border: 2px solid black;
+  background-color: darkmagenta;
+} */
+
+.items{
+  border: 2px solid black;
+  border-radius: 20%;
+  background-color: skyblue;
+  /* width:fit-content; */
+  height: fit-content;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  align-items: center;
+  overflow:scroll;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 100px;
+  padding: 5px;
+  width: 550px;
+  height: 500px;
+  display: flex;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.Cbtn{
+  padding: 5px;
+border-radius: 30%;
+width: 100px;
+height: 50px;
+background-color: coral;
+margin: 50px;
+
+text-align: center;
+pointer-events: stroke;
+text-align: center;
+display: inline;
+cursor: pointer;
+}
+.Cbtn:hover{
+  background-color: red;
+}
+
