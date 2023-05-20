@@ -4,7 +4,6 @@ const navigate=useNavigate();
 return(
     <>
     <h1> This is Home Page</h1>
-    <h1> This is Donald Page</h1>
     <button onClick={()=>navigate('/Obama')}>Obama Page</button>
     <button onClick={()=>navigate('/AddParams')}>AddParams Page</button>
     <button onClick={()=>navigate('/Carousel')}>Carousel Page</button>
