@@ -16,6 +16,7 @@ interface idata{
 export default function UseEffectThree(){
     const [page,setpage]=useState<number>(1);
     const[users,setusers]=useState<idata[]>([]);
+    const[search,setsearch]=useState<string>("");
     useEffect(()=>{
         async function Api(){
             const response=await fetch(`https://reqres.in/api/users?page=${page}`)
@@ -45,7 +46,8 @@ export default function UseEffectThree(){
         <button className="btn" onClick={()=>setpage(1)}>Page 1</button>
         <button className="btn" onClick={()=>setpage(2)}>Page 2</button>
         <button className="btn" onClick={sortUsers}>Sort by firstname</button>
-        {users.map(renderuser)}
+        <input type="text" onChange={(e)=>setsearch(e.target.value)}></input>
+        {users.filter((x)=>x.first_name.toLowerCase().includes(search) || x.last_name.toLowerCase().includes(search)).map(renderuser)}
         </>
     )
 }
