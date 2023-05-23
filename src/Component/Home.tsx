@@ -11,6 +11,8 @@ return(
     <button className="btn" onClick={()=>navigate('/Form')}>Form Page</button>
     <button className="btn" onClick={()=>navigate('/NoteTaking')}>NoteTaking</button>
     <button className="btn" onClick={()=>navigate('/Sachin')}>Sachin Page</button>
+    <button className="btn" onClick={()=>navigate("/UseEffectTwo")}>Async Corosal</button>
+    <button className="btn" onClick={()=>navigate("/userEffect_Three")}>UseEffectThree</button>
     </>
 )
 } 
