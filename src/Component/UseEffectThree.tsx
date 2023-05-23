@@ -36,9 +36,10 @@ export default function UseEffectThree(){
     }
     function sortUsers(){
         let clone=[...users];
-        clone=clone.sort((x,y)=>x.first_name.localeCompare(y.last_name))
+        clone=clone.sort((x,y)=>x.first_name.localeCompare(y.first_name))
         setusers(clone);
     }
+
     return(
         <>
         <button className="btn" onClick={()=>setpage(1)}>Page 1</button>
